@@ -45,7 +45,7 @@ public class BankAccount {
         if (amount > balance) {
             throw new InsufficientFundsException(Math.abs(balance - amount));
         }
-        balance = balance - amount;
+        balance -= amount;
     }
 
     /**
