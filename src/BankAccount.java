@@ -43,7 +43,7 @@ public class BankAccount {
      */
     public void withdraw(double amount) throws InsufficientFundsException {
         if (amount > balance) {
-            throw new InsufficientFundsException(Math.abs(balance - amount));
+            throw new InsufficientFundsException(amount - balance);
         }
         balance -= amount;
     }

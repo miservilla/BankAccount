@@ -1,4 +1,6 @@
 /**
+ * Exception class for insufficient funds. Thrown by BankAccount class if
+ * amount withdrawn is greater than balance available.
  * @author Michael Servilla
  * @version date 2017-02-15
  */
